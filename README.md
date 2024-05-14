@@ -1,19 +1,15 @@
 ## Now stable! 💖
 
-Kars Template v1.2 (Shoutout Nitlix for the help/inspiration 💛)
+# API Template
 
-This is a [Next.js](https://nextjs.org/) template created for super-powering Kars Apps quickly. It includes:
+This is a [Next.js](https://nextjs.org/) template created for Kars Powered API's, featuring
 
--   Inter - A google font.
--   Client theme provider, first rendered by the server (kars-themes)
--   The theme provider includes Locomotive Scroll, AOS built specifically for Loco. (locomotive-aos)
--   metaGen() - A function that generates meta tags for the page. (kars-metagen)
--   Quickstart global.scss and animations.scss
--   SASS already installed.
--   Tailwind ready to fly.
--   4 Fonts to start with: Neue Montreal, Neutral Grotesk, Inter and Strretch Sans.
--   Prisma ready to launch! (Just create the .env vars)
--   Prebuilt I18N support (With @vercel/edge, via headers and context (kars-i18n))
+- Automatic Redirecting
+- SQL Preinstalled
+- Stats
+- Usefull Bases
+- Copywriting
+- 404 page for API Routes
 
 ## Quickstarting using create-kapp
 
@@ -42,20 +38,20 @@ To initialise this template, choose one of the following options:
 ### Option 1: Folder already exists
 
 ```bash
-gh repo clone kars1996/Template .
+gh repo clone kars1996/APITemplate .
 ```
 
 ### Option 2: Folder does not exist
 
 ```bash
-gh repo clone kars1996/Template <folder-name>
+gh repo clone kars1996/APITemplate <folder-name>
 # the folder name is optional
 ```
 
 ### Option 3: Forking
 
 ```bash
-gh repo fork kars1996/Template
+gh repo fork kars1996/APITemplate
 ```
 
 ## Getting Started
@@ -80,6 +76,8 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000/v1/hello](http://localhost:3000/v1/hello) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the API by modifying `v1/route.ts`. The Page must be reloaded to see changes
+
+Happy Coding 🚀

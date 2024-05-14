@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.scss";
-import Body from "@/modules/Body/body";
 
 /*
 Copyright © 2024 Kars (github.com/kars1996)
@@ -12,13 +11,12 @@ Contact Kars for any enquieries
 
 import Console from "../modules/Console/Console";
 import { newMeta } from "@/modules/meta";
-import AOS from "@/modules/Aos/aos";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Kars Template",
-    description: ":D",
+    title: "Kars API",
+    description: "Private API Server",
 };
 
 export default function RootLayout({
@@ -41,14 +39,12 @@ export default function RootLayout({
                     rel="stylesheet"
                 />
             </head>
-            {/*  For now AOS and Smooth Scroll don't work together, If you want one comment the other out */}
-            <Body className={`${inter.className} __kars`}>
+            <body className={`${inter.className} __kars`}>
                 <main className="_kars">
-                    <AOS />
                     {children}
                 </main>
                 <Console />
-            </Body>
+            </body>
         </html>
     );
 }
