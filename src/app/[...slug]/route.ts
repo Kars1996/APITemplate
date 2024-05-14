@@ -6,12 +6,14 @@ Contact Kars for any enquieries
 */
 
 interface ResponseProp {
-    response: any,
+    code: string;
+    response: any;
     status?: number
 }
 
 const Data: ResponseProp = {
-    response: "Not Found",
+    code: "not_found",
+    response: "This API Route does not exisist.",
     status: 404
 }
 
